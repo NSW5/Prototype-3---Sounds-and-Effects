@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 799321201}
   - component: {fileID: 799321200}
   - component: {fileID: 799321202}
+  - component: {fileID: 799321203}
   m_Layer: 0
   m_Name: Background_Nature
   m_TagString: Untagged
@@ -406,6 +407,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f44a4aca8775eb4da52d3cb96be3ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &799321203
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799321199}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 112.79999, y: 18.836718, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &840313337 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: c14bb5ce28dbb7442a2f79d8b6a061ce, type: 3}
@@ -453,6 +475,7 @@ MonoBehaviour:
   JumpForce: 10
   GravityModifier: 2
   IsOnGround: 1
+  gameOver: 0
 --- !u!65 &840313342
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -603,7 +626,7 @@ GameObject:
   - component: {fileID: 2014335012}
   m_Layer: 9
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
