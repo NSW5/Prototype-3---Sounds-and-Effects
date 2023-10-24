@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
         {
             IsOnGround = true;
             dirtParticle.Play();
-        }   else if (collision.gameObject.CompareTag("Ground"))
+        }   else if (collision.gameObject.CompareTag("Obstacle"))
         {
             playerAudio.PlayOneShot(crashSound , 1.0f);
             gameOver = true;
